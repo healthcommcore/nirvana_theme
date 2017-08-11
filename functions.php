@@ -24,3 +24,18 @@ require_once(get_template_directory() . "/includes/theme-hooks.php");     // Hoo
 require_once(get_template_directory() . "/includes/widgets.php");     	  // Theme Widgets
 require_once(get_template_directory() . "/includes/ajax.php");     	      // Ajax
 require_once(get_template_directory() . "/includes/tgm.php");             // TGM Plugin Activation
+
+// HCC hero image addition
+
+function hero_widgets_init() {
+  register_sidebar( array(
+    'name' => 'Hero area',
+    'id' => 'hero-image-widget',
+    'before_widget' => '<div id="%1$s" class="hero-image">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2>',
+    'after_title' => '</h2>',
+  ) );
+}
+
+add_action('widgets_init', 'hero_widgets_init');

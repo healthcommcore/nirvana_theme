@@ -46,6 +46,13 @@
 	</header><!-- #header -->
 </div><!-- #header-full -->
 
+<!-- HCC addition, adding hero area -->
+<?php if( is_active_sidebar('hero-image-widget') ) : ?>
+  <div class="hero-container">
+    <?php dynamic_sidebar('hero-image-widget'); ?>
+  </div>
+<?php endif; ?>
+
 <div style="clear:both;height:0;"> </div>
 <?php cryout_breadcrumbs_hook();?>
 <div id="main">
