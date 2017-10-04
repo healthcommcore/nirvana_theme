@@ -26,6 +26,13 @@
 			</div> <!-- #footer2-inside -->
 		</div><!-- #footer2 -->
 
+    <!-- HCC addition, adding footer bottom widget -->
+    <?php if( is_active_sidebar('footer-bottom-widget') ) : ?>
+      <div class="footer-bottom-container">
+        <?php dynamic_sidebar('footer-bottom-widget'); ?>
+      </div>
+    <?php endif; ?>
+
 	</footer><!-- #footer -->
 
 	</div><!-- #main -->

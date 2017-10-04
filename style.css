@@ -3548,4 +3548,9 @@ body.woocommerce-page .entry-content .checkout ul > li, .woocommerce #payment ul
    .woocommerce-page #payment ul.payment_methods li { list-style: none; }
 body.woocommerce .page-title { display: inherit; margin-bottom: 20px; padding: 10px; }
 
+.footer-bottom {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 /* FIN! */

@@ -13,13 +13,13 @@ $nirvanas = nirvana_get_theme_options(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class( (( is_sticky() && is_page_template() )?'sticky':'') ); ?>>
 				
 		<header class="entry-header">			
-			<h2 class="entry-title">
+			<h3 class="entry-title">
 				<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr( __( 'Permalink to %s', 'nirvana' ) ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
-			</h2>
+			</h3>
 			<?php cryout_post_title_hook(); ?>
-			<div class="entry-meta">
-				<?php	cryout_post_meta_hook();  ?>
-			</div><!-- .entry-meta -->	
+			<!--<div class="entry-meta">-->
+				<?php	//cryout_post_meta_hook();  ?>
+			<!--</div> .entry-meta -->	
 		</header><!-- .entry-header -->
 		
 			<?php cryout_post_before_content_hook();  

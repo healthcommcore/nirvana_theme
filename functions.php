@@ -39,3 +39,16 @@ function hero_widgets_init() {
 }
 
 add_action('widgets_init', 'hero_widgets_init');
+
+// HCC footer bottom addition
+
+function footer_bottom_widgets_init() {
+  register_sidebar( array(
+    'name' => 'Footer bottom',
+    'id' => 'footer-bottom-widget',
+    'before_widget' => '<div id="%1$s" class="footer-bottom">',
+    'after_widget' => '</div>',
+  ) );
+}
+
+add_action('widgets_init', 'footer_bottom_widgets_init');
