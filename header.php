@@ -18,6 +18,17 @@
 <?php
  	cryout_header_hook();
 	wp_head(); ?>
+  
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107492814-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107492814-1');
+  </script>
+
 </head>
 <body <?php body_class(); ?>>
 
